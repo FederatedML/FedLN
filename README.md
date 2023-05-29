@@ -2,8 +2,12 @@
 
 Federated Learning (FL) is a distributed machine learning paradigm that enables learning models from decentralized private datasets while keeping the data on users' devices. However, most existing FL approaches assume high-quality labels are readily available, which is often not the case in real-world scenarios. In this paper, we propose FedLN, a framework for addressing label noise in different FL training stages, including initialization, on-device model training, and server model aggregation. FedLN computes per-client noise-level estimation in a single federated round and improves the models' performance by correcting or limiting the effect of noisy samples. Extensive experiments on various publicly available vision and audio datasets demonstrate a 24\% improvement on average compared to other existing methods for a label noise level of 70\%. We further validate the efficiency of FedLN in human-annotated real-world noisy datasets and report a 9\% increase on average in models' recognition performance, emphasizing that FedLN can be useful for improving FL services provided to everyday users.
 
-
 A complete description of our work can be found in [our paper](https://arxiv.org/abs/2208.09378).
+
+```
+git clone https://github.com/FederatedML/FedLN
+cd FedLN/src
+```
 
 ## Dependencies
 Create a new Python enviroment (virtualenvs, anacoda, etc.) and install all required packages via:
@@ -12,7 +16,7 @@ foo@bar:~$ pip install -r requirements.txt
 ```
 
 ## Executing experiments
-From the root directory of this repo, run:
+From the `src` (root) directory of this repo, run:
 
 ```console
 # FedLN-NNC
