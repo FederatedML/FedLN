@@ -45,7 +45,7 @@ You can configure all federated parameters (i.e. number of federated rounds, num
 If you use this repository, please consider citing:
 
 <pre>@misc{tsouvalas2022federated,
-	title={Federated Learning with Noisy Labels}, 
+	title={Labeling Chaos to Learning Harmony: Federated Learning with Noisy Labels}, 
 	author={Vasileios Tsouvalas and Aaqib Saeed and Tanir Ozcelebi and Nirvana Meratnia},
 	year={2022},
 	eprint={2208.09378},
