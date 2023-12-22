@@ -2,6 +2,7 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL']="3"
 os.environ['TF_FORCE_GPU_ALLOW_GROWTH']='true'
 os.environ['CUDA_DEVICE_ORDER']="PCI_BUS_ID"
+os.environ['TFDS_DATA_DIR']="data"
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 import flwr as fl
