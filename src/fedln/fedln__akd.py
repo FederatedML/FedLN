@@ -146,7 +146,7 @@ def run_simulation():
 	history = fl.simulation.start_simulation(client_fn=create_client, server=server, num_clients=int(args.num_clients),
 		ray_init_args= {"ignore_reinit_error": True, "num_cpus": int(args.num_clients),},
 		config=fl.server.ServerConfig(num_rounds=int(args.num_rounds), round_timeout=None),)
-	if Path(args.temp_dir).exists() and Path(temp_dir).is_dir(): shutil.rmtree(Path(temp_dir))
+	if Path(args.temp_dir).exists() and Path(temp_dir).is_dir(): shutil.rmtree(Path(args.temp_dir))
 	return history
 
 if __name__ == "__main__":
